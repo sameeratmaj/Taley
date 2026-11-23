@@ -14,16 +14,6 @@
 
 ---
 
-## Teaser
-
-
-
-https://github.com/user-attachments/assets/5425ea71-cd73-4594-88bb-44a5d4065a7f
-
-
-
----
-
 ## What is Taley AI Story Studio?
 
 Taley AI Story Studio is a **human-guided AI production tool** that takes a raw story idea — typed or spoken — and transforms it into a complete, ready-to-listen audio drama episode.
