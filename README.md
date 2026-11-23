@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pocket FM AI Story Studio
+# Taley AI Story Studio
 
 **Turn any story idea into a fully produced audio drama — script, voices, music, and all.**
 
@@ -27,17 +27,9 @@ https://github.com/user-attachments/assets/5425ea71-cd73-4594-88bb-44a5d4065a7f
 
 ---
 
-## Team
+## What is Taley AI Story Studio?
 
-![Pocket FM AI Story Studio team at the Zero to One hackathon](assets/readme/team-photo.jpg)
-
-*Pocket FM AI Story Studio — Zero to One Hackathon, 1st Runner-Up*
-
----
-
-## What is Pocket FM AI Story Studio?
-
-Pocket FM AI Story Studio is a **human-guided AI production tool** that takes a raw story idea — typed or spoken — and transforms it into a complete, ready-to-listen audio drama episode.
+Taley AI Story Studio is a **human-guided AI production tool** that takes a raw story idea — typed or spoken — and transforms it into a complete, ready-to-listen audio drama episode.
 
 The creator stays in **full control** at every key decision point. The AI automates the repetitive heavy lifting: writing, voicing, sound planning, and audio mixing. This is **not** a "press one button and hope" system — every important stage can be reviewed, edited, or regenerated before the next step begins.
 
@@ -173,7 +165,7 @@ Approved outline
 
 ```powershell
 git clone <your-repo-url>
-cd POCKET_FM
+cd Taley
 ```
 
 ---
@@ -278,7 +270,7 @@ Most tests use fakes and temporary folders — **no live API keys are required**
 ## Project Layout
 
 ```
-POCKET_FM/
+Taley/
 ├── app/                      FastAPI application and all backend logic
 │   ├── main.py               HTTP routes and API entry point
 │   ├── graph.py              LangGraph planning state machine
@@ -341,8 +333,6 @@ POCKET_FM/
 ---
 
 <div align="center">
-
-Built for the **Zero to One Hackathon**
 
 </div>
 
