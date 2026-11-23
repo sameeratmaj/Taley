@@ -10,9 +10,6 @@
 [![OpenAI](https://img.shields.io/badge/OpenAI-Powered-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![Gemini](https://img.shields.io/badge/Gemini-TTS%20%26%20STT-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Workflow-FF6B35?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
-
-[![Trophy](https://img.shields.io/badge/Zero%20to%20One%20Hackathon-1st%20Runner--Up-gold?style=for-the-badge&logo=trophy&logoColor=white)](#)
-
 </div>
 
 ---
