@@ -1,5 +1,5 @@
 
-POCKET FM HACKATHON
+Taley
 AI Creator Copilot for Content Production
 Product Overview
 The AI Creator Copilot is an end-to-end storytelling assistant that helps creators turn a simple story idea into a complete, publish-ready audio series. Instead of replacing the creator, the AI works as a collaborative partner throughout the entire content creation process. At every stage, the creator can review, edit, approve, or regenerate the generated content, ensuring complete creative control.
