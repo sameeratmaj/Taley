@@ -1,4 +1,4 @@
-# Agentic Cinematic Audio Editor for POCKET_FM
+# Agentic Cinematic Audio Editor
 
 > Status: the fast post-TTS editor described below is implemented as of 2026-07-26. The later sections remain the production-grade roadmap for word alignment, durable revision history, objective QA, and an audio-listening critic.
 
