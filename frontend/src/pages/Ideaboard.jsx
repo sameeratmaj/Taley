@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { ArrowLeft, Check, ChevronDown, Loader2, Pencil, RefreshCw, Sparkles, UserRound, X } from 'lucide-react'
-import PocketLogo from '../components/PocketLogo'
+import Logo from '../components/Logo'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import * as studio from '../api/studio'
@@ -18,10 +18,10 @@ const card =
 
 /* ── SWOT quadrant config ── */
 const QUAD_CONFIG = [
-  { key: 'strengths',    label: 'Strengths',    letter: 'S', color: 'text-green-400', ring: 'border-green-500/40', bg: 'bg-green-500/10', accent: 'bg-green-400', badge: 'bg-green-400/15' },
-  { key: 'weaknesses',   label: 'Weaknesses',   letter: 'W', color: 'text-red-400',   ring: 'border-red-500/40',   bg: 'bg-red-500/10',   accent: 'bg-red-400',   badge: 'bg-red-400/15' },
-  { key: 'opportunities',label: 'Opportunities',letter: 'O', color: 'text-blue-400',  ring: 'border-blue-500/40',  bg: 'bg-blue-500/10',  accent: 'bg-blue-400',  badge: 'bg-blue-400/15' },
-  { key: 'threats',      label: 'Threats',      letter: 'T', color: 'text-amber-400', ring: 'border-amber-500/40', bg: 'bg-amber-500/10', accent: 'bg-amber-400', badge: 'bg-amber-400/15' },
+  { key: 'strengths', label: 'Strengths', letter: 'S', color: 'text-green-400', ring: 'border-green-500/40', bg: 'bg-green-500/10', accent: 'bg-green-400', badge: 'bg-green-400/15' },
+  { key: 'weaknesses', label: 'Weaknesses', letter: 'W', color: 'text-red-400', ring: 'border-red-500/40', bg: 'bg-red-500/10', accent: 'bg-red-400', badge: 'bg-red-400/15' },
+  { key: 'opportunities', label: 'Opportunities', letter: 'O', color: 'text-blue-400', ring: 'border-blue-500/40', bg: 'bg-blue-500/10', accent: 'bg-blue-400', badge: 'bg-blue-400/15' },
+  { key: 'threats', label: 'Threats', letter: 'T', color: 'text-amber-400', ring: 'border-amber-500/40', bg: 'bg-amber-500/10', accent: 'bg-amber-400', badge: 'bg-amber-400/15' },
 ]
 
 /* ── Primitives ── */
@@ -41,12 +41,12 @@ function Modal({ open, onClose, children, size = 'md', tall = false, leaveChatBa
 
   const maxW =
     size === '70vw' ? 'w-[70vw] max-w-[70vw]' :
-    size === '4xl'  ? 'max-w-4xl' :
-    size === '6xl'  ? 'max-w-6xl' :
-    size === '5xl'  ? 'max-w-5xl' :
-    size === '3xl'  ? 'max-w-3xl' :
-    size === '2xl'  ? 'max-w-2xl' :
-    size === 'lg'   ? 'max-w-lg'  : 'max-w-xl'
+      size === '4xl' ? 'max-w-4xl' :
+        size === '6xl' ? 'max-w-6xl' :
+          size === '5xl' ? 'max-w-5xl' :
+            size === '3xl' ? 'max-w-3xl' :
+              size === '2xl' ? 'max-w-2xl' :
+                size === 'lg' ? 'max-w-lg' : 'max-w-xl'
 
   return (
     <div
@@ -56,13 +56,12 @@ function Modal({ open, onClose, children, size = 'md', tall = false, leaveChatBa
       <div className={`absolute inset-0 bg-black/85 ${leaveChatBar ? 'bottom-24 sm:bottom-28' : ''}`} />
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`relative z-10 w-full ${maxW} overflow-y-auto rounded-xl border border-neutral-800 bg-[#0A0A0A] p-6 sm:p-8 ${
-          tall
+        className={`relative z-10 w-full ${maxW} overflow-y-auto rounded-xl border border-neutral-800 bg-[#0A0A0A] p-6 sm:p-8 ${tall
             ? leaveChatBar
               ? 'min-h-[60vh] max-h-[calc(100vh-11rem)]'
               : 'min-h-[75vh] max-h-[92vh]'
             : 'max-h-[85vh]'
-        }`}
+          }`}
       >
         <button
           type="button"
@@ -94,11 +93,10 @@ function EditIconButton({ label, editing, onClick }) {
     <button
       type="button"
       onClick={onClick}
-      className={`rounded-lg border p-2 transition-colors ${
-        editing
+      className={`rounded-lg border p-2 transition-colors ${editing
           ? 'border-[#E61C38]/60 bg-[#E61C38]/10 text-[#E61C38]'
           : 'border-neutral-800 text-neutral-400 hover:border-[#E61C38]/60 hover:text-white'
-      }`}
+        }`}
       aria-label={label}
       title={label}
     >
@@ -110,11 +108,11 @@ function EditIconButton({ label, editing, onClick }) {
 }
 
 const TAG_COLORS = {
-  blue:    'border-blue-500/30   text-blue-400',
-  red:     'border-red-500/30    text-red-400',
-  orange:  'border-orange-500/30 text-orange-400',
-  purple:  'border-purple-500/30 text-purple-400',
-  green:   'border-green-500/30  text-green-400',
+  blue: 'border-blue-500/30   text-blue-400',
+  red: 'border-red-500/30    text-red-400',
+  orange: 'border-orange-500/30 text-orange-400',
+  purple: 'border-purple-500/30 text-purple-400',
+  green: 'border-green-500/30  text-green-400',
   neutral: 'border-neutral-700   text-neutral-300',
 }
 const TAG_CYCLE = ['blue', 'purple', 'red', 'orange', 'green', 'neutral']
@@ -807,16 +805,16 @@ export default function Ideaboard() {
             {/* Character fields — plain text by default, editable on toggle */}
             <div className="flex flex-col gap-6">
               {[
-                ['personality',     'Personality'],
-                ['details',         'Details'],
-                ['physical_persona','Physical Persona'],
-                ['backstory',       'Backstory'],
+                ['personality', 'Personality'],
+                ['details', 'Details'],
+                ['physical_persona', 'Physical Persona'],
+                ['backstory', 'Backstory'],
                 ['vocal_direction', 'Vocal direction'],
               ].map(([key, label]) => {
                 const value =
                   characterDraft[key] ||
                   characterDraft[
-                    key === 'details'         ? 'description'     :
+                  key === 'details' ? 'description' :
                     key === 'vocal_direction' ? 'vocal_signature' : key
                   ] || ''
                 return (

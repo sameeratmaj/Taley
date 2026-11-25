@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import * as studio from '../api/studio'
 import GenerationLoader from '../components/GenerationLoader'
-import PocketLogo from '../components/PocketLogo'
+import Logo from '../components/Logo'
 import StoryPlotChart from '../components/StoryPlotChart'
 import { joinEmotion, splitEmotion } from '../lib/format'
 

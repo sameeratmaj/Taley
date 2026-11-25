@@ -11,7 +11,7 @@ export default function PocketLogo() {
         </svg>
       </span>
       <span className="text-base font-bold tracking-tight text-white">
-        Pocket FM
+        Taley
       </span>
     </div>
   )
